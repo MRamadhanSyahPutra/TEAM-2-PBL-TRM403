@@ -1,0 +1,219 @@
+:root {
+  --body: #f1ece4;
+  --navbar: #13534e;
+  --navbar-text: #7b7874;
+  --navbar-text-scroll: #f0ebe3;
+  --navbar-text-scroll-hover: #0c3734;
+  --mdb-nav-link-padding-x: 0;
+  --mdb-nav-link-padding-y: 0.5rem;
+  --typed-color: #38807b;
+  --button-color: #53c0b9c1;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 12.5rem;
+}
+@media (min-width: 626px) {
+  html {
+    scroll-padding-block-start: 10rem;
+  }
+}
+.navbar-color {
+  background-color: var(--navbar) !important;
+  color: var(--navbar-text);
+  transition: 0.5s ease-in;
+}
+.navbar-light {
+  transition: 0.5s ease-out !important;
+}
+
+.bg-transparent {
+  transition: 0.5s ease-out !important;
+}
+
+.nav-link {
+  color: var(--navbar-text) !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s ease-out !important;
+}
+.navbar-text-scroll {
+  color: var(--navbar-text-scroll) !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  background: none;
+  border: 0;
+  padding: var(--mdb-nav-link-padding-y) var(--mdb-nav-link-padding-x);
+  transition: 0.5s ease-in !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .navbar-text-scroll {
+    padding-right: var(--mdb-navbar-nav-link-padding-x);
+    padding-left: var(--mdb-navbar-nav-link-padding-x);
+  }
+}
+.nav-link:hover {
+  color: var(--navbar) !important;
+}
+
+.navbar-text-scroll:hover {
+  color: var(--navbar-text-scroll-hover) !important;
+}
+.active {
+  color: var(--navbar) !important;
+}
+.active-scroll {
+  color: var(--navbar-text-scroll-hover) !important;
+}
+.gradient-text {
+  background: linear-gradient(40deg, var(--navbar), var(--body));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 22.5px;
+  font-weight: bold;
+  transition: 0.5s ease-in;
+}
+
+.gradient-text-replace {
+  background: linear-gradient(40deg, var(--body), var(--navbar));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 22.5px;
+  font-weight: bold;
+  transition: 0.5s ease-out;
+}
+
+.mt-main {
+  margin-top: 110px;
+}
+.title {
+  font-weight: 600;
+  color: var(--typed-color);
+}
+.second-title {
+  font-weight: 600;
+  color: var(--typed-color);
+  font-size: 21px;
+}
+.typed {
+  font-weight: 600;
+  font-size: 30px;
+}
+.typed-color {
+  color: var(--typed-color);
+}
+.btn-firebase {
+  border: none;
+  padding: 10px;
+  transition: 0.5s ease-out;
+  background: none;
+  margin: 0 5px;
+}
+.btn-flutter {
+  border: none;
+  padding: 10px;
+  transition: 0.5s ease-out;
+  background: none;
+  margin: 0 5px;
+}
+.btn-flutter:hover {
+  background-color: var(--navbar);
+  box-shadow: 5px 5px 5px rgba(71, 197, 251, 0.7);
+}
+.btn-firebase:hover {
+  background-color: var(--navbar);
+  box-shadow: 5px 5px 5px rgba(255, 202, 40, 0.7);
+}
+.btn-flutter:hover img {
+  filter: hue-rotate(200deg);
+}
+.btn-firebase:hover img {
+  filter: hue-rotate(155deg);
+}
+.btn-firebase img {
+  width: 35px;
+  height: 35px;
+}
+.btn-flutter img {
+  width: 35px;
+  height: 35px;
+}
+hr {
+  margin: 1rem 0 !important;
+  border-top: 1 solid;
+  color: var(--navbar) !important;
+  border: 2px solid !important;
+}
+
+@keyframes smartphone-1 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes smartphone-2 {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.smartphone-1 {
+  margin-left: -135px;
+  transition: 0.5s ease-out;
+  animation-duration: 1s;
+  animation-name: smartphone-1;
+}
+.smartphone-2 {
+  margin-left: 46px;
+  transition: 0.5s ease-out;
+  animation-name: smartphone-2;
+  animation-duration: 1s;
+}
+.unduh {
+  margin-top: 25px;
+  margin-left: 6px;
+}
+.btn-outline-primary {
+  border: 2px solid var(--navbar) !important;
+  color: var(--navbar) !important;
+}
+.btn-outline-primary:hover {
+  background-color: var(--button-color) !important;
+}
+.about-us {
+  margin-top: 225px;
+}
+.contact-us {
+  margin-top: 120px;
+  margin-bottom: 200px;
+}
+.btn-info {
+  background-color: var(--navbar) !important;
+}
+@keyframes scrolling {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.scroll {
+  animation: scrolling linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GarasiKu</title>
+    <link
+      rel="shortcut icon"
+      href="asset/img/icon-apk.png"
+      type="image/x-icon"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="asset/css/styles.css" />
+
+    <!-- MDB-Bootstrap -->
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: var(--body);
+        color: #13524e;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Image and text -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="asset/img/icon-apk.png"
+              class="me-2"
+              height="35"
+              alt="GarasiKu"
+              loading="lazy"
+            />
+            <small class="title gradient-text">GarasiKu</small>
+          </a>
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link about-us-link" href="#about-us">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link contact-us-link" href="#contact-us"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-main">
+      <!-- Bagian-Home -->
+      <section id="home">
+        <div class="row align-content-center justify-content-between">
+          <div
+            class="col-12 col-sm-5 col-md-6 col-lg-6 col-xl-6 p-3 p-sm-2 mb-5"
+          >
+            <p class="title scroll">TEAM 2 - PBL TRM403</p>
+            <h1 class="typed scroll">GarasiKu <span id="typed"></span></h1>
+            <p class="mt-4 mt-sm-5 mt-md-5 mt-lg-3 mt-xl-4 scroll">
+              GarasiKu adalah aplikasi berbasis mobile IoT yang memungkinkan
+              pengguna untuk mengontrol pintu garasi mereka dari jarak jauh
+              melalui ponsel pintar. Dengan GarasiKu, mereka dapat dengan mudah
+              menyalakan atau mematikan pintu garasi sesuai keinginan.
+            </p>
+            <hr />
+            <button type="button" class="btn-flutter rounded-7 scroll">
+              <img src="asset/img/flutter.png" alt="" />
+            </button>
+
+            <button type="button" class="btn-firebase rounded-7 scroll">
+              <img src="asset/img/firebase.png" alt="" />
+            </button>
+          </div>
+          <div
+            class="col-12 col-sm-4 col-md-6 col-lg-6 col-xl-6 p-3 p-sm-2 d-grid justify-content-around align-content-center"
+          >
+            <div class="z-1 position-relative">
+              <div class="z-1 smartphone-1">
+                <img src="asset/img/HP-1.png" alt="" width="200" />
+              </div>
+              <div class="smartphone-2 z-0 position-absolute top-0">
+                <img src="asset/img/HP-2.png" alt="" width="200" />
+              </div>
+            </div>
+            <a
+              class="unduh btn btn-outline-primary scroll"
+              href="asset/apk/Aplikasi Pintu Garasi.apk"
+              download="GarasiKu"
+              target="_self"
+              >download</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Bagian-About us -->
+      <section class="about-us" id="about-us">
+        <p class="second-title mb-xl-6 scroll">My Team</p>
+        <div
+          class="row align-content-center justify-content-between justify-content-sm-around g-4 g-sm-4 g-md-4 g-lg-4 g-xl-5"
+          id="card"
+        >
+          <!-- Card Component -->
+        </div>
+      </section>
+      <!-- Bagian-Contact us -->
+      <section class="contact-us" id="contact-us">
+        <div class="row justify-content-between align-content-center">
+          <p class="second-title scroll">Contact us</p>
+          <div class="col-12 col-sm-12 col-md-6 mt-4 scroll">
+            <img
+              src="asset/img/my-team/my-team.jpeg"
+              class="img-fluid hover-shadow rounded-end-5"
+              alt="My-Team"
+            />
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 mt-4 scroll">
+            <form>
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" id="nameInput" class="form-control" />
+                <label class="form-label" for="nameInput">Name</label>
+              </div>
+
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="emailInput" class="form-control" />
+                <label class="form-label" for="emailInput">Email</label>
+              </div>
+              <div data-mdb-input-init class="form-outline mb-4">
+                <textarea
+                  class="form-control"
+                  id="textAreaInput"
+                  rows="4"
+                ></textarea>
+                <label class="form-label" for="textAreaInput">Pesan</label>
+              </div>
+              <button class="btn btn-info" type="button" onclick="submitFrom()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-transparent text-center fixed-bottom">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/dhaan.468/"
+            role="button"
+            ><i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="https://www.linkedin.com/in/muhammad-ramadhan-syah-putra/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="https://github.com/MRamadhanSyahPutra"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2024 Copyright:
+        <a class="text-body" href="https://github.com/MRamadhanSyahPutra"
+          >TEAM 2 - PBL TRM403</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="asset/js/scripts.js"></script>
+
+    <!-- Script-MDB-Bootstrap -->
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
+    ></script>
+    <!-- typed js     -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      document.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        const title = document.querySelector(".title");
+        const navLi = document.querySelectorAll(".nav-item a");
+        const homeLink = document.querySelector(".home-link");
+
+        if (window.scrollY > 0) {
+          nav.classList.add("navbar-color");
+          nav.classList.remove("navbar-light");
+          nav.classList.remove("bg-transparent");
+          title.classList.add("gradient-text-replace");
+          title.classList.remove("gradient-text");
+          navLi.forEach((e) => {
+            e.classList.add("navbar-text-scroll");
+            e.classList.remove("nav-link");
+          });
+          if (homeLink.classList.contains("active")) {
+            homeLink.classList.remove("active");
+            homeLink.classList.add("active-scroll");
+          }
+        } else {
+          nav.classList.remove("navbar-color");
+          nav.classList.add("navbar-light");
+          nav.classList.add("bg-transparent");
+          title.classList.remove("gradient-text-replace");
+          title.classList.add("gradient-text");
+          navLi.forEach((e) => {
+            e.classList.remove("navbar-text-scroll");
+            e.classList.add("nav-link");
+          });
+        }
+        console.log(navLi);
+        console.log(window.scrollY);
+      });
+      var typed = new Typed("#typed", {
+        strings: [
+          `Kendalikan Garasimu Dari Jarak Jauh`,
+          `<span class="typed-color">Berbasis Mobile apps with IoT</span>`,
+        ],
+        typeSpeed: 50,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
